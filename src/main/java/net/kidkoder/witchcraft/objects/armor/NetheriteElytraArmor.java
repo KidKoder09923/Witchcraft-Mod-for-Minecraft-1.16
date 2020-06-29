@@ -27,4 +27,5 @@ public class NetheriteElytraArmor extends ElytraItem {
     public EquipmentSlotType getEquipmentSlot(ItemStack stack) {
         return EquipmentSlotType.CHEST;
     }
+
 }
