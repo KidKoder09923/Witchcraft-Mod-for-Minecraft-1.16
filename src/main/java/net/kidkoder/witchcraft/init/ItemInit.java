@@ -1,8 +1,7 @@
 package net.kidkoder.witchcraft.init;
 
 import net.kidkoder.witchcraft.objects.armor.NetheriteElytraArmor;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,7 +15,7 @@ public class ItemInit {
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                NETHERITE_ELYTRA = new NetheriteElytraArmor(ArmorMaterial.NETHERITE, EquipmentSlotType.CHEST, new Item.Properties().defaultMaxDamage(1000).group(ItemGroup.TRANSPORTATION)).setRegistryName("netherite_elytra")
+                NETHERITE_ELYTRA = new ElytraItem(new Item.Properties().defaultMaxDamage(1000).group(ItemGroup.TRANSPORTATION)).setRegistryName("netherite_elytra")
         );
     }
 }

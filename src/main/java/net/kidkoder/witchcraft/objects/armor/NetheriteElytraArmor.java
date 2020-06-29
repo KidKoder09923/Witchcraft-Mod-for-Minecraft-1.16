@@ -1,12 +1,21 @@
 package net.kidkoder.witchcraft.objects.armor;
 
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Item;
+import net.minecraft.item.ElytraItem;
+import net.minecraft.item.ItemStack;
 
-public class NetheriteElytraArmor extends ArmorItem {
-    public NetheriteElytraArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties p_i48534_3_) {
-        super(materialIn, slot, p_i48534_3_);
+import javax.annotation.Nullable;
+
+public class NetheriteElytraArmor extends ElytraItem {
+
+
+    public NetheriteElytraArmor(Properties builder) {
+        super(builder);
+    }
+
+    @Nullable
+    @Override
+    public EquipmentSlotType getEquipmentSlot(ItemStack stack) {
+        return EquipmentSlotType.MAINHAND;
     }
 }
