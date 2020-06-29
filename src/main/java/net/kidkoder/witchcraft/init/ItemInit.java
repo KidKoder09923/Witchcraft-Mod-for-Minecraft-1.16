@@ -1,7 +1,6 @@
 package net.kidkoder.witchcraft.init;
 
 import net.kidkoder.witchcraft.objects.armor.NetheriteElytraArmor;
-import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
