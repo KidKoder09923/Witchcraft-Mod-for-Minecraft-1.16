@@ -16,6 +16,6 @@ public class NetheriteElytraArmor extends ElytraItem {
     @Nullable
     @Override
     public EquipmentSlotType getEquipmentSlot(ItemStack stack) {
-        return EquipmentSlotType.MAINHAND;
+        return EquipmentSlotType.CHEST;
     }
 }

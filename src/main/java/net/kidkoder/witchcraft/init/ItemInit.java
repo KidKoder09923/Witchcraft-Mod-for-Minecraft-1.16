@@ -15,7 +15,7 @@ public class ItemInit {
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                NETHERITE_ELYTRA = new ElytraItem(new Item.Properties().defaultMaxDamage(1000).group(ItemGroup.TRANSPORTATION)).setRegistryName("netherite_elytra")
+                NETHERITE_ELYTRA = new NetheriteElytraArmor(new Item.Properties().defaultMaxDamage(1000).group(ItemGroup.TRANSPORTATION)).setRegistryName("netherite_elytra")
         );
     }
 }
